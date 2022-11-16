@@ -11,7 +11,10 @@ def home(request):
 
 
 def contato(request):
-    return render(request, 'temp.html')
+    return render(request, 'recipes/contato.html', context={
+        'name': 'Python',
+
+    })
 
 
 def sobre(request):
